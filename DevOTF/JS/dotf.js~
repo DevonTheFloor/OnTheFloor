@@ -1,0 +1,13 @@
+let Anglais = document.getElementById("anglais");
+
+Anglais.addEventListener("click",function (versAngl) {
+	document.getElementById("bloc2").style.display = "none";
+	document.getElementByClassName("lgANG").style.display ="block";
+	});
+
+let Kreol = document.getElementById("kreol");
+
+Kreol.addEventListener("click",function (versKrl) {
+	document.getElementByClassName("lgANG").style.display = "none";
+	document.getElementByClassName("lgKRL").style.display ="block";
+	});

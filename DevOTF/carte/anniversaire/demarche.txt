@@ -1,0 +1,8 @@
+
+
+	La premiere bulle de texte apparait automatiquement apres une seconde. 
+	Les suivantes se déclanchent en cliquant sur la bulle précedemment apparu, 
+	chacune leur tour.
+	Comme tout travail lié à la programmation web, si ça ne fonctionne pas du tout, merci
+	d'essayer sur un autre navigateur.
+	Merci.
