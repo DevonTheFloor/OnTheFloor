@@ -1,0 +1,244 @@
+
+@font-face {
+    font-family: 'gondola_sd_-_swashregular';
+    src: url('../police/gondolasd-sw/Gondola_SD-Swash-webfont.eot');
+    src: url('../police/gondolasd-sw/Gondola_SD-Swash-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../police/gondolasd-sw/Gondola_SD-Swash-webfont.woff2') format('woff2'),
+         url('../police/gondolasd-sw/Gondola_SD-Swash-webfont.woff') format('woff'),
+         url('../police/gondolasd-sw/Gondola_SD-Swash-webfont.ttf') format('truetype'),
+         url('../police/gondolasd-sw/Gondola_SD-Swash-webfont.svg#gondola_sd_-_swashregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1, h2, h3 {
+	font-family: 'gondola_sd_-_swashregular'; }
+
+.sub_title{
+    font-size: 1em;
+}
+.profil{
+    font-family: 'arial';
+	background-color: #91bd3a;
+	text-align: center;}
+
+p{
+	text-align: justify;
+	margin: 2em;}
+
+a:hover{
+	color: red;
+	font-size: 1.2rem;} 
+
+body{
+    background-color: #f1d6ab;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../image/bghead.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+}
+.pom{
+
+    border: 25px solid white;
+	border-radius: 50%; 
+    width: 300px;
+}
+.name{
+    margin: 25px;
+	text-align: center;
+	width: 67%;}
+
+
+main{
+    
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+}
+
+aside{	
+    
+	background-image: url("../image/bgaside.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 30%;
+}
+
+section{
+   
+    width: 65%;
+    height: auto;
+
+}
+
+.date{
+    font-weight: bold;
+    width: 30%;
+}
+
+.icon{
+	width: 80px;
+	height:80px;
+	border: 5px white solid;
+	border-radius: 45%;}
+.icon:hover{
+	width: 90px;
+	height: 90px;}
+
+.pic{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;}
+
+.expe {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;}
+
+.expe:hover{
+    border: 2px solid #f6a320;
+}
+
+.content{
+	width: 60%}
+
+.commandation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo{
+    width: 90px;
+    height: auto;
+}
+.logo--L{
+    width: 60px;
+    height: auto;
+}
+        background-image: url('../image/aside.png');
+        background-repeat: no-repeat;
+footer{
+
+}
+
+#hobby{
+    
+    width: 30%;
+    height: 100%;
+    background-image: url('../image/bgfoot.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----------------------------------media-----------------
+---------- 1150 PX-----------------------*/
+
+@media screen and (max-width: 1150px){
+    .pom{
+    width: 200px;
+	border: 10px white solid;
+	border-radius: 45%; }
+}
+
+/*------------900 PX ----------------------*/
+
+@media screen and (max-width: 900px){
+    body{
+        background-color: '';
+
+    }
+
+    main{
+        background-image: url('../image/pcr.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+	   flex-direction: column;}
+
+    aside{
+        background-image: url('');
+	   width: 100%;}
+    
+    section{
+
+        width: 100%;
+        
+    }
+
+    #contact{
+        margin-top: 9%
+    }
+    .me{
+        background-image: url('');
+    }
+    .pom{
+        width: 150px;
+	   border: 10px white solid;
+	   border-radius: 45%; }
+    
+    .icon{
+	   width: 60px;
+	   height: 60px;
+	   border: 2px white solid;
+	   border-radius: 45%;}
+    
+    .icon:hover{
+	   width: 70px;
+	   height: 70px;}
+    
+    
+    figure{
+	   margin-right: auto;
+	   margin-left: auto;
+	   align-items: center;
+	}
+    #hobby{
+        width: 100%;
+        background-image: url('');
+    }
+}
+
+/*---------------------- 700 PX ---------------------------*/
+
+@media screen and (max-width: 700px){
+    body{
+        background-image: url('../image/Stjo2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+     main{
+        background-image: url('');
+       width: 100%;
+    }
+    section{
+        background-image: url('');
+
+    }
+ 
+    .expe{
+        flex-direction: column;
+    }
+    .date, .content{
+        width: 100%;
+        
+    }
+   
+    #hobby{
+        background-image: url('');
+        width: 100%;
+    }
+}
