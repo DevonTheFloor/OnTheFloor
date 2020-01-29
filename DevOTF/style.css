@@ -83,7 +83,7 @@ body{
     	background-image:linear-gradient(to left,rgba(118, 108, 106,0), rgba(65, 61, 60)),
 	url("image/lazB.jpg");
 	background-position: center;
-	background-size: contain, 100%;
+	background-size: cover;/*contain, 100%;*/
 	
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -137,7 +137,9 @@ footer{
 	display: none;}
 nav{
 	background-image: linear-gradient(to top right,black,blue) ;
+	background-size: contain;
 	border-radius:15px ;
+	max-width: auto;
 /*background-image:linear-gradient(to left,rgba(118, 108, 106,0.5), rgba(65, 61, 60,0.5));*/}
 
 .lgANG{
@@ -163,13 +165,12 @@ nav{
 
 body{
 	
-    	background-image: linear-gradient(to top left,black,rgba( 19, 219, 243,0.5) ),
-	url("image/uranus.jpg");
+    	background-image:url("image/lazBMobPic.jpg");
 	background-position: center;
-	background-size: contain, 100%;
+	background-size: cover; /*contain, 100%;*/
 	
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-attachment: ;
     /* Obligatoire si on veut "voir" le dégradé */
     	width: 100%;
     	height: 100%;}
@@ -187,7 +188,7 @@ h2{
 	text-align: center;
 	display: contents;}
 a{
-	font-size:small;}
+	font-size: small;}
 
 
 footer{
@@ -198,10 +199,9 @@ footer{
 @media screen and (max-width: 600px)and (orientation: landscape) {
 	body{
 	
-    	background-image:linear-gradient(to left,rgba(118, 108, 106,0), rgba(65, 61, 60)),
-	url("image/lazB.jpg");
+    	background-image: url("image/lazBMobLd.jpg");
 	background-position: center;
-	background-size: contain, 100%;
+	background-size: cover; /*contain, 100%;*/
 	
 	background-repeat: no-repeat;
 	background-attachment: fixed;
