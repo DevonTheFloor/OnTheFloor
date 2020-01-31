@@ -69,6 +69,9 @@ p{
 .list{
   @incluse text-shadow;
 }
+.present{
+  @incluse text-shadow;
+}
 
 a{
      text-decoration: none;
@@ -84,6 +87,7 @@ a{
 	justify-content: space-around;}
 
 .bloc2{
+  @include text-shadow;
 	border: 0.5em ridge cornflowerblue ;
 	border-radius: 45px;
 	box-shadow: 2px 2px 5px blue;
