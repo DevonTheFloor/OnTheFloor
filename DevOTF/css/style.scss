@@ -19,17 +19,19 @@ body {
   background-attachment: fixed;
   widht: 100%;
 }
-header{
+
+header {
   width: 100%;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-footer{
+
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,7 +47,7 @@ footer{
   height: 6%;
 
   &:hover {
-    background: linear-gradient(to top left, rgb(    228, 203, 247 ), rgb( 172, 209, 245 ));
+    background: linear-gradient(to top left, rgb(228, 203, 247), rgb(172, 209, 245));
     border: 4px solid rgb(228, 203, 247);
     -moz-transition-duration: 5s;
     -moz-transition-property: background-image, widht, height;
@@ -62,16 +64,18 @@ footer{
   text-shadow: 2px 2px 2px blue;
 }
 
-h1{
+h1 {
   font-size: 5em;
   @include title;
   @include text-shadow;
 }
-h2{
+
+h2 {
   @include title;
   @include text-shadow;
 }
-h3{
+
+h3 {
   @include title;
   @include text-shadow;
 }
@@ -98,6 +102,7 @@ a {
     color: red;
   }
 }
+
 .langue {
   margin-left: 10%;
   margin-right: 10%;
@@ -127,7 +132,7 @@ nav {
   width: 90%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around; 
+  justify-content: space-around;
 }
 
 ul {
@@ -152,12 +157,16 @@ li {
 .lgKRL {
   display: none;
 }
+.vdo{
+  width: 45%;
+  height: 100%;
+}
 
 /*========================================= ( MEDIA ) =================================*/
 
 @media screen and (max-width: 1154px) {
 
- h1 {
+  h1 {
     font-size: 2em;
   }
 
@@ -171,7 +180,8 @@ li {
       background-repeat: no-repeat;
       background-attachment: fixed;
     }
-      ul{
+
+    ul {
       border: 2px solid red;
       width: 70%;
       display: flex;
@@ -180,32 +190,41 @@ li {
     }
   }
 }
+.vdo{
+  width: 95%;
+  height: 100%;
+}
 
-  /*------------------------------- ( SMARTPHONE ) --------------------------------*/
-  @media screen and (max-width: 700px) {
+/*------------------------------- ( SMARTPHONE ) --------------------------------*/
+@media screen and (max-width: 700px) {
 
-    body {
-      background-image: url("../image/lazBMobPic.jpg");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 100%;
-    }
-    a {
-      font-size: large;
-    }
-    nav {border: 2px solid yellow;
-      flex-direction: column;
-      align-items: center;
-    
-    }
-    ul{
-      border: 2px solid red;
-      width: 80%;
-      display: flex;
-      flex-direction: row;
-      align-items: stretch;
-    }
-   
+  body {
+    background-image: url("../image/lazBMobPic.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
   }
+
+  a {
+    font-size: large;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  ul {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .btn-menu{
+    width: 100%;
+  }
+
+}
