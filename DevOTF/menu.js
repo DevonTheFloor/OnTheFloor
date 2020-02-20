@@ -1,0 +1,2 @@
+ let menu = document.getElementById('menu');
+ menu.insertAdjacentHTML('afterbegin','<ul><a href="index.html"><li>Acceuil</li></a><a href="./cv/index.html"><li> CV </li></a></ul><ul><a href="https://github.com/DevonTheFloor" target="blank"><li>GitHub</li></a><a href="formation.html"><li>Formation</li></a></ul><ul><a href="ressource.html"><li>Ressources</li></a><a href="contact.html"><li>Contact</li></a></ul>');
