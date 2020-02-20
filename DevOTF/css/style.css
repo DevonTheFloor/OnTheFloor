@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: 'gondola_sd_-_swashregular';
   src: url("../police/gondolasd-sw/Gondola_SD-Swash-webfont.eot");
@@ -123,58 +122,47 @@ li {
 
 /*========================================= ( MEDIA ) =================================*/
 @media screen and (max-width: 1154px) {
-  #page {
-    margin: 10%; }
-
-  #bloc1 {
-    font-size: 1.5em; }
-
-  /*------------------------------- ( SMARTPHONE ) --------------------------------*/ }
-@media screen and (max-width: 1154px) and (max-width: 600px) {
-  body {
-    background-image: url("image/lazBMobPic.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%; }
-
-  #page {
-    margin: 3%; }
-
-  #bloc3 {
-    display: none; }
-
-  #bloc4 {
-    display: none; }
-
   h1 {
-    display: none; }
+    font-size: 2em; }
 
-  h2 {
-    text-align: center;
-    display: contents; }
-
-  a {
-    font-size: small; }
-
-  footer {
-    display: contents; } }
-@media screen and (max-width: 1154px) {
   /*-----------------------------------( SMARTPHONE paysage )-----------------------------*/ }
 @media screen and (max-width: 1154px) and (max-width: 600px) and (orientation: landscape) {
   body {
-    background-image: url("image/lazBMobLd.jpg");
+    background-image: url("../image/lazBMobLd.jpg");
     background-position: center;
     background-size: cover;
-    /*contain, 100%;*/
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    /* Obligatoire si on veut "voir" le dégradé */
+    background-attachment: fixed; }
+
+  ul {
+    border: 2px solid red;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around; } }
+/*------------------------------- ( SMARTPHONE ) --------------------------------*/
+@media screen and (max-width: 700px) {
+  body {
+    background-image: url("../image/lazBMobPic.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%; }
 
-  nav ul {
-    flex-direction: column; } }
+  a {
+    font-size: large; }
+
+  nav {
+    border: 2px solid yellow;
+    flex-direction: column;
+    align-items: center; }
+
+  ul {
+    border: 2px solid red;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; } }
 
 /*# sourceMappingURL=style.css.map */
