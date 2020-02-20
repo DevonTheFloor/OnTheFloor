@@ -1,5 +1,0 @@
-date: 2019-08-22 toilette: non bcaa: non
-date: 2019-09-01 toilette: oui bcaa: oui
-date: 2019-09-02 toilette: non bcaa: non
-date: 2019-09-03 toilette: oui bcaa: non
-date: 2019-09-04 toilette: non bcaa: oui
