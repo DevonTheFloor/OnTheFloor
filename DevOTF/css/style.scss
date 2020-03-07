@@ -96,7 +96,6 @@ p {
 a {
   text-decoration: none;
   color: rgb(19, 219, 243);
-
   &:hover {
     font-weight: bold;
     color: red;
@@ -191,8 +190,18 @@ li {
   }
 }
 .vdo{
-  width: 95%;
-  height: 100%;
+  width: 100%;
+  height: auto;
+}
+form{border: 20px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+input, label{
+  margin: 1%;
+  font-size: 1.5em;
 }
 
 /*------------------------------- ( SMARTPHONE ) --------------------------------*/
@@ -226,5 +235,9 @@ li {
   .btn-menu{
     width: 100%;
   }
+  .vdo{
+  width: 50%;
+  height: auto;
+}
 
 }
