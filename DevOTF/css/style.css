@@ -4,6 +4,8 @@
   src: url("../police/gondolasd-sw/Gondola_SD-Swash-webfont.eot?#iefix") format("embedded-opentype"), url("../police/gondolasd-sw/Gondola_SD-Swash-webfont.woff2") format("woff2"), url("../police/gondolasd-sw/Gondola_SD-Swash-webfont.woff") format("woff"), url("../police/gondolasd-sw/Gondola_SD-Swash-webfont.ttf") format("truetype"), url("../police/gondolasd-sw/Gondola_SD-Swash-webfont.svg#gondola_sd_-_swashregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+/* line 14, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 body {
   background-image: url("../image/lazB.jpg");
   background-position: center;
@@ -12,15 +14,27 @@ body {
   background-attachment: fixed;
   widht: 100%; }
 
+/* line 23, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 header {
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2%; }
 
+/* line 30, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
+.ecu {
+  width: 30px;
+  height: 30px; }
+
+/* line 35, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%; }
 
+/* line 42, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 footer {
   display: flex;
   flex-direction: column;
@@ -28,50 +42,61 @@ footer {
   width: 100%;
   margin: 10% 0%; }
 
+/* line 75, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 h1 {
-  font-size: 5em;
+  font-size: 7em;
   text-align: center;
   font-family: 'gondola_sd_-_swashregular';
   color: white;
   text-shadow: 2px 2px 2px blue; }
 
+/* line 81, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 h2 {
   text-align: center;
   font-family: 'gondola_sd_-_swashregular';
   color: white;
   text-shadow: 2px 2px 2px blue; }
 
+/* line 86, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 h3 {
   text-align: center;
   font-family: 'gondola_sd_-_swashregular';
   color: white;
   text-shadow: 2px 2px 2px blue; }
 
+/* line 91, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 p {
   text-align: justify;
   color: white;
   text-shadow: 2px 2px 2px blue; }
 
+/* line 96, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 .list {
   @incluse text-shadow; }
 
+/* line 100, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 .present {
   @incluse text-shadow; }
 
+/* line 104, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 a {
   text-decoration: none;
   color: #13dbf3; }
+  /* line 107, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
   a:hover {
     font-weight: bold;
     color: red; }
 
+/* line 113, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 .langue {
-  margin-left: 10%;
-  margin-right: 10%;
+  /* margin-left: 10%;
+  margin-right: 10%;*/
+  margin-top: 10%;
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
 
+/* line 122, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 .bloc2 {
   color: white;
   text-shadow: 2px 2px 2px blue;
@@ -81,26 +106,31 @@ a {
   width: 80%;
   margin: 2%;
   padding: 2%; }
+  /* line 131, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
   .bloc2__FC {
     background-color: #0632b1;
     border: 0.7em ridge silver;
     box-shadow: 12px 12px 15px silver; }
 
+/* line 137, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 .elcont {
   width: 100%; }
 
+/* line 141, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 nav {
   width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
 
+/* line 148, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
   width: 20%; }
 
+/* line 155, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 li {
   background: linear-gradient(to top right, black, blue);
   border-radius: 15px;
@@ -110,49 +140,59 @@ li {
   text-align: center;
   padding: 15%;
   margin: 10%; }
+  /* line 57, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
   li:hover {
     background: linear-gradient(to top left, #e4cbf7, #acd1f5);
     border: 4px solid #e4cbf7;
     -moz-transition-duration: 5s;
     -moz-transition-property: background-image, widht, height; }
 
+/* line 162, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 .message {
   margin: 5%; }
 
+/* line 165, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 .lgANG {
   display: none; }
 
+/* line 169, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 .lgKRL {
   display: none; }
 
+/* line 172, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 .vdo {
   width: 45%;
   height: 100%; }
 
 /*========================================= ( MEDIA ) =================================*/
 @media screen and (max-width: 1154px) {
+  /* line 181, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
   h1 {
     font-size: 2em; }
-
   /*-----------------------------------( SMARTPHONE paysage )-----------------------------*/ }
+
 @media screen and (max-width: 1154px) and (max-width: 600px) and (orientation: landscape) {
+  /* line 187, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
   body {
     background-image: url("../image/lazBMobLd.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; }
-
+  /* line 195, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
   ul {
     border: 2px solid red;
     width: 70%;
     display: flex;
     flex-direction: row;
     align-content: space-around; } }
+
+/* line 204, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 .vdo {
   width: 100%;
   height: auto; }
 
+/* line 208, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 form {
   font-size: 0.8em;
   display: flex;
@@ -160,12 +200,14 @@ form {
   align-items: center;
   width: 95%; }
 
+/* line 215, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
 input, label {
   margin: 1%;
   font-size: 1.5em; }
 
 /*------------------------------- ( SMARTPHONE ) --------------------------------*/
 @media screen and (max-width: 700px) {
+  /* line 223, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
   body {
     background-image: url("../image/lazBMobPic.jpg");
     background-position: center;
@@ -173,24 +215,24 @@ input, label {
     background-repeat: no-repeat;
     width: 100%;
     height: 100%; }
-
+  /* line 232, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
   a {
     font-size: large; }
-
+  /* line 236, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
   nav {
     flex-direction: column;
     align-items: center;
     width: 100%; }
-
+  /* line 242, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
   ul {
     width: 95%;
     display: flex;
     flex-direction: row;
     align-items: stretch; }
-
+  /* line 248, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
   .btn-menu {
     width: 100%; }
-
+  /* line 251, /home/devon/Documents/OnTheFloor/DevOTF/css/style.scss */
   .vdo {
     width: 50%;
     height: auto; } }
