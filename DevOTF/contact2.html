@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+
+<head>
   <meta name="viewport" content="width=device-width" />
   <meta charset="utf-8" />
   <title>Dev On The Floor !!</title>
@@ -15,16 +16,29 @@
   </header>
   <main>
     <div class="bloc2 bloc2__FC">
-      <h2>Developpeur d'application Web et mobile</h2>
+      <h2>Devon The Floor</h2>
+      <h3>Developpeur d'application Web et mobile</h3>
       <form action="contact.php" method="post">
-       <label for="name">Nom:</label>
-       <input type="text"  id="name" name="name">
-       <label for="firstname">Prenom</label>
-       <input type="text"  id="firnam" name="firnam">
-       <label for="catego">Professionnel/particulier</label>
-       <input type="checkbox"  id="catego" name="pro" value="pro">
-       <label for="mail">mail:</label>
-       <input type="text" id="mail" name="mail">
+        <p>Merci de renseigner:</p>
+        <div class="ID elcont">
+          <label for="name">Nom:</label>
+          <input type="text" id="name" name="name">
+          <label for="firstname">Prenom</label>
+          <input type="text" id="firnam" name="firnam">
+        </div>
+        <div class="coor elcont">
+          <label for="catego">Professionnel</label>
+          <input type="radio" id="pro" name="catego" value="pro">
+          <label for="catego">Particulier</label>
+          <input type="radio" id="parti" name="catego" value="parti">
+          <label for="mail">mail:</label>
+          <input type="text" id="mail" name="mail" required="required">
+        </div>
+        <div class="message elcont">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" cols="40" rows="10" required="required"></textarea><br>
+        </div>
+        <input type="submit" value="Bientôt en service">
       </form>
     </div>
   </main> <!-- page -->
@@ -47,4 +61,6 @@
 
   </footer>
   <script src="//code.jquery.com/jquery-&.12.0.min.js"></script>
-</body></html>
+</body>
+
+</html>

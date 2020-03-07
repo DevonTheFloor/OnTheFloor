@@ -120,11 +120,13 @@ a {
   padding: 2%;
 
   &__FC {
-    background-color: white;
+    background-color:#0632b1;
     border: 0.7em ridge silver;
     box-shadow: 12px 12px 15px silver;
-    height: 1000px;
   }
+}
+.elcont{
+  width: 100%;
 }
 
 nav {
@@ -148,7 +150,9 @@ li {
   padding: 15%;
   margin: 10%;
 }
-
+.message{
+  margin: 5%;
+}
 .lgANG {
   display: none;
 }
@@ -172,7 +176,6 @@ li {
   /*-----------------------------------( SMARTPHONE paysage )-----------------------------*/
   @media screen and (max-width: 600px)and (orientation: landscape) {
     body {
-
       background-image: url("../image/lazBMobLd.jpg");
       background-position: center;
       background-size: cover;
@@ -193,11 +196,12 @@ li {
   width: 100%;
   height: auto;
 }
-form{border: 20px solid red;
+form{
+  font-size: 0.8em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 95%;
 }
 input, label{
   margin: 1%;
