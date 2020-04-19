@@ -1,12 +1,12 @@
-
-/*=============== ANGLAIS ==================*/
+/*
+//=============== ANGLAIS ==================
 $(function(){
    $('#anglais').click(function(){
       $('.lgANG').toggle(),
 	$('.lgFR').css('display','none'); // AFFICHE ET CACHE A CHAQUE CLIQUE SUR LE BOUTTON,
 });	
 });
-/*============== KREOL =====================*/
+//============== KREOL =====================*
 $(function(){
    $('#kreol').click(function(){
       $('.lgKRL').toggle(),
@@ -15,7 +15,7 @@ $(function(){
    });
 });
 
-/*================== FRANCAIS =================*/
+//================== FRANCAIS =================
 $(function(){
    $('#francais').click(function(){
       $('.lgFR').toggle(),
@@ -23,3 +23,4 @@ $(function(){
 	$('.lgANG').css('display','none'); // AFFICHE ET CACHE A CHAQUE CLIQUE SUR LE BOUTTON
    });
 });
+*/

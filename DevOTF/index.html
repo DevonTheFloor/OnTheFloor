@@ -24,19 +24,18 @@
     </div>
   </header><!-- bloc1 -->
   <main>
+   <div id="comp1">
     <div class="langue">
-      <figure>
+      <figure  >
         <img src="image/fr.png" id="francais"></figure>
-      <figure><img src="image/ang.png" id="anglais"></figure>
-      <figure><img src="image/krl.png" id="kreol">
+      <figure><img src="image/ang.png" id="anglai"  v-on:click="englishVersion()" ></figure>
+      <figure><img src="image/krl.png" id="kreol" v-on:click="kr">
       </figure>
     </div><!-- langue -->
     <div id="accueil" class="bloc2 lgFR">
-      <p id="present"> Premier galop, ce site est largement évolutif. Pour l'heure il se contente d'être dynamique et adaptif. Je finis de m'amuser avec CSS et passerai à JQuerry, pour à terme finir en Material Design.
-        Java Script? Arf... C'est pas que ça m'amuse mais c'est passage obligé même si je me destine à JAVA, qui fonctionne aussi bien pour le web que pour l'Android (deux en un c'est beaucoup plus malin!). Mais, du coup, si je fais le compte, ça fait pas du developpement full stack ça?<br /></p>
+      <p id="present"> {{message}}</p>
     </div> <!-- b2 -->
-    <div class="bloc2 lgANG">
-      <h2 class="petit"> Hi All! </h2>
+    <!--<div class="bloc2 lgANG">
       <p id="present"> First gallop, this site is largely evolutive. For now, he is content to be dynamic and adaptive. I finished having fun with CSS and will go to JQuerry, eventually finishing in Material Design.
         Java Script? Arf ... It's not that it amuses me but it is obligatory even if I intend to JAVA, which works as well for the web as for the Android (two in one is much smarter! ). But, so, if I do the count, it does not develop full stack that? <br /></p>
     </div> <!-- b2 -->
@@ -45,6 +44,7 @@
       <p id="present"> Sa lé mon premié site, ou koné zordu lilé un pé faib mais i cale ek l'ecran. Mi fini amusé ek CSS, aprè ek JQuerry. Aprè tou sa la , ma mèt a li en Matérial Design.
         Java Script? Totoche, mi lé oblizé semmant mi té ve fé JAVA. Li mach pou le web et l'Android (lé deu ensemb lé plu for!). Oté, si ou i agard bien, i fé de fullstacks tou sa là, non?<br /></p>
     </div> <!-- bloc2 -->
+    </div>
   </main><!-- page -->
   <footer>
    <h2>Menu</h2>
