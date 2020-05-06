@@ -1,4 +1,4 @@
-/*
+
 //=============== ANGLAIS ==================
 $(function(){
    $('#anglais').click(function(){
@@ -23,4 +23,3 @@ $(function(){
 	$('.lgANG').css('display','none'); // AFFICHE ET CACHE A CHAQUE CLIQUE SUR LE BOUTTON
    });
 });
-*/

@@ -64,7 +64,8 @@ p {
   @incluse text-shadow; }
 
 .present {
-  @incluse text-shadow; }
+  color: white;
+  text-shadow: 2px 2px 2px blue; }
 
 a {
   text-decoration: none;
