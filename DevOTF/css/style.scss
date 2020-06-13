@@ -12,6 +12,7 @@
 }
 
 body {
+  width: 100%;
   background-image: url("../image/lazB.jpg");
   background-position: center;
   background-size: cover;
@@ -260,6 +261,10 @@ input, label{
   .vdo{
   width: 50%;
   height: auto;
-}
+  }
+.minidiplome{
+  width: 60%;
+  height: auto;
+  }
 
 }
