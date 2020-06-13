@@ -238,3 +238,29 @@ section{
 				width: 100%;
 		}
 }
+/*---------------------- 450 PX ---------------------------*/
+@media screen and (max-width: 450px){
+	.commandation{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	header{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+	}
+	.name{
+		width: 90%;
+	}
+	.me{
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+	}
+	p {
+		margin: 5%;
+	}
+}
