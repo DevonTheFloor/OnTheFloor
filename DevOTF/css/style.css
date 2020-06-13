@@ -10,7 +10,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  widht: 100%; }
+  width: 100%; }
 
 header {
   width: 100%;
@@ -65,7 +65,8 @@ p {
   @incluse text-shadow; }
 
 .present {
-  @incluse text-shadow; }
+  color: white;
+  text-shadow: 2px 2px 2px blue; }
 
 a {
   text-decoration: none;
@@ -138,6 +139,13 @@ li {
 .vdo {
   width: 45%;
   height: 100%; }
+
+.formation {
+  text-align: center; }
+
+.minidiplome {
+  width: 20%;
+  height: auto; }
 
 /*========================================= ( MEDIA ) =================================*/
 @media screen and (max-width: 1154px) {

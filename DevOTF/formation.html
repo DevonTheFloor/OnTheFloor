@@ -16,52 +16,25 @@
     </a>
   </header>
   <main>
-    <div class="bloc2">
+    <div class="bloc2 formation">
+      Formé sur mongoDB par la MongoDB University<br>
+      <a href="image/doc/mongo01.pdf" target="_blank"><h4>Certificat premier niveau</h4></a></a><br>
+      <figure>
+        <a href="image/doc/mongo01.pdf" target="_blank"><img src="image/mongo01.png" alt="diplôme MongoDB" class="minidiplome"></a>
+      </figure>
+      <br>
       En auto formation sur <a href="http://www.openclassrooms.com" target="blank">Open Classrooms</a>, j'ai validé les formations certifiantes suivantes: <br>
-      <div>
-        <li>INTERNET:
-          <ol> Comprendre le Web <a href="image/doc/comprendre-le-web.pdf" target="blank"> (voir certificat)</a></ol>
-          <ol> Git et Github <a href="image/doc/git-et-github.pdf" target="blank">(voir certificat)</a></ol>
-          <ol> Les Solutions CMS <a href="image/doc/solutions-cms.pdf" target="blank">(voir certificat)</a></ol>
-          <ol> HTML 5 et CSS 3 <a href="image/doc/html5-et-css3.pdf" target="blank">(voir certificat)</a></ol>
-        </li>
-      </div>
-      <br>
-      <div>
-        <li>JAVA:
-          <ol> Premier projet JAVA <a href="image/doc/projet-avec-java.pdf" target="blank"> (voir certificat)</a></ol>
-          <ol>Java et les collections <a href="image/doc/java-colle.pdf" target="blank"> (voir certificat)</a></ol>
-        </li>
-      </div>
-      <br>
-      <div>
-        <li class="present">ALGORITHME:
-          <ol> Fonctionnement des algorithmes <a href="image/doc/algorithmes.pdf" target="blank"> (voir certificat)</a></ol>
-        </li>
-      </div>
-      <br>
-      <div>
-        <li class="present">DOCUMENTATION:
-          <ol> Mettez en place un système de veille informationnelle<a href="image/doc/veilInfo.pdf" target="blank"> (voir certificat)</a></ol>
 
-          <ol>Maintenez-vous à jour en développement <a href="image/doc/jourDev.pdf" target="blank"> (voir certificat)</a></ol>
-        </li>
-      </div>
-      <br>
-      <div>
-        <li>GESTION DE PROJET:
-          <ol>Gérez votre projet informatique facilement<a href="image/doc/gestPro.pdf" target="blank"> (voir certificat)</a></ol>
-        </li>
-      </div>
-      <br>
-      <div>
-        <li>AUTO APRENTISSAGE:
-          <ol>Apprenez à apprendre <a href="image/doc/appApp.pdf" target="blank"> (voir certificat)</a></ol>
-          <ol>Travaillez en autonomie <a href="image/doc/travAuto.pdf" target="blank"> (voir certificat)</a></ol>
-        </li>
+      <div id=autofor>
+        <div v-for="item in formations" :key="item.id">
+            <h4> <a :href="item.url" target="_blank"> {{ item.titre}} </h4></a> </h4>
+          </div>
+        </div>
       </div>
     </div> <!-- b2 -->
+  
   </main><!-- page -->
+  
   <footer>
     <h2>Menu</h2>
     <nav id="menu">
@@ -71,4 +44,45 @@
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="menu.js"></script>
   <script src="//code.jquery.com/jquery-&.12.0.min.js"></script>
+  <script>
+
+    var autofor = new Vue({
+      el: '#autofor',
+      data:{  
+        formations:[
+          {
+            titre: "Comprendre le Web",
+            url:"image/doc/comprendre-le-web.pdf"
+          },{
+            titre: 'Git et Github',
+            url: 'image/doc/git-et-github.pdf'
+          },{
+            titre: 'Les Solutions CMS',
+            url:'image/doc/solutions-cms.pdf'
+          },{
+            titre:'HTML 5 et CSS 3',
+            url:'image/doc/html5-et-css3.pdf'
+          },{
+            titre: 'Fonctionnement des algorithmes ',
+            url:'image/doc/algorithmes.pdf'
+          },{
+            titre:'Mettez en place un système de veille informationnelle',
+            url:'image/doc/veilInfo.pdf'
+          },{
+            titre:'Maintenez-vous à jour en développement',
+            url:'image/doc/jourDev.pdf'
+          },{
+            titre: 'Gérez votre projet informatique facilement',
+            url:'image/doc/gestPro.pdf'
+          },{
+            titre: 'Apprenez à apprendre',
+            url:'image/doc/appApp.pdf'
+          },{
+            titre: 'Travaillez en autonomie',
+            url:'image/doc/travAuto.pdf'
+          }
+        ]
+      }
+    })
+  </script>
 </body></html>

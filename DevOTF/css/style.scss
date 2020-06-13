@@ -17,7 +17,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  widht: 100%;
+  width: 100%;
 }
 
 header {
@@ -100,7 +100,7 @@ p {
 }
 
 .present {
-  @incluse text-shadow;
+  @include text-shadow;
 }
 
 a {
@@ -174,6 +174,13 @@ li {
 .vdo{
   width: 45%;
   height: 100%;
+}
+.formation{
+  text-align: center;
+}
+.minidiplome{
+  width: 20%;
+  height: auto;
 }
 
 /*========================================= ( MEDIA ) =================================*/
