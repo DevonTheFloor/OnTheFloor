@@ -23,10 +23,11 @@
   <meta name="description" content="Developpeur full stack d'application Web et mobile, sur les techno: HTML5, CSS 3, Javascript, Node.js et MongoDB" >
   <title>Dev On The Floor !!</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> 
+  <link href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" rel="stylesheet"> 
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body id="bodid">
   <header>
     <h1> Dev On The Floor </h1>
     <h2>Developpeur d'application web et mobile</h2>
@@ -48,7 +49,8 @@
       <figure><img src="image/krl.png" id="kreol">
       </figure>
     </div><!-- langue -->
-    <div id="accueil" class="bloc2 lgFR">
+
+    <div id="accueil" class="bloc2 lgFR taget">
       <h2 class="petit"> Bonjour à tous </h2>
       <p id="present"> 
         Développeur web full stack junior. Je travaille avec les technos front-end courantes: HTML5, CSS3 et Javascript. Mais aussi avec Sass et Vue.js
@@ -78,12 +80,14 @@
     
     </nav>
   </footer>
-  <!-- development version, includes helpful console warnings -->
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
- <script src="JS/vueotf.js"></script>
   <script src="menu.js"></script>
   <script src="JS/dotf.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
   <script src="JQ/jquerry.js"></script>
+  <script>
+    let vousEtesIci = "index";
+    console.log(vousEtesIci);
+    
+  </script>
 
 </body></html>
