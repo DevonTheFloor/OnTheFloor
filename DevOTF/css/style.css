@@ -29,6 +29,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 3%;
   width: 100%; }
 
 footer {
@@ -37,6 +38,23 @@ footer {
   align-items: center;
   width: 100%;
   margin: 10% 0%; }
+
+.bann {
+  text-align: center;
+  font-family: 'gondola_sd_-_swashregular';
+  width: 99%;
+  height: 80px;
+  position: sticky;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+  background-color: #71a3dd;
+  border: 5px solid rgba(166, 251, 251, 0.931);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 500ms; }
+  .bann-v {
+    opacity: 1; }
 
 h1 {
   font-size: 6em;
@@ -79,8 +97,6 @@ a {
     background-color: blue; }
 
 .langue {
-  /* margin-left: 10%;
-   margin-right: 10%;*/
   margin-top: 10%;
   display: flex;
   flex-direction: row;
@@ -150,17 +166,12 @@ li {
   width: 20%;
   height: auto; }
 
-.visible {
-  border: 20px solid red;
-  padding: 8%;
-  background-color: orange; }
-
 header {
   animation: move cubic-bezier(0.32, 0, 0.07, 1) 2s; }
 
 @keyframes move {
   0% {
-    transform: translateX(100%); }
+    transform: translateX(50%); }
   100% {
     transform: translateX(0%); } }
 /*========================================= ( MEDIA ) =================================*/

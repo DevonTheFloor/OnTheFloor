@@ -4,24 +4,23 @@ vsKreol.addEventListener("click",function vsKreol(){
  console.log("OTTTTTTEEEEE !!");}
 );
 
-const ratio =0.5;
+const ratio = 0.1;
 var options = {
   root: null,//document.querySelector('#observed'),
   rootMargin: '0px',
   threshold: ratio
   }
 
-  var voir = function(entries, observer) {
-    entries.forEach(entry => {
-      if(entry.intersectionRatio > ratio)
-     { console.log('VISIBLE');
-     //observer.unobserve(entry.target)
-     entry.target.classList.add('visible');
-     }else{
-       console.log('INVISIBLE')
-     }
+var voir = function(entries, observer) {
+    
+  entries.forEach(entry => {
+  if(entry.isIntersecting == false){ 
+    bann.classList.add('bann-v');
+  }else{
+    bann.classList.remove('bann-v');
+  }
     }); 
-  };
+};
 
 var observer = new IntersectionObserver(voir, options);
 

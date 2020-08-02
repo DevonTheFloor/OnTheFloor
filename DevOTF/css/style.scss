@@ -38,7 +38,7 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;  padding: 3%;
   width: 100%;
 }
 
@@ -73,6 +73,28 @@ footer {
 @mixin text-shadow {
   color: white;
   text-shadow: 2px 2px 2px rgb(145, 223, 253);
+}
+
+.bann{
+  @include title;
+  width: 99%;
+  height: 80px;
+  position: sticky;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+  background-color: rgb(113, 163, 221);
+  border: 5px solid rgba(166, 251, 251, 0.931);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 500ms;
+  &-v{
+    opacity:1;
+
+  }
+}
+.titlebann{
+
 }
 
 h1 {
@@ -119,8 +141,6 @@ a {
 }
 
 .langue {
- /* margin-left: 10%;
-  margin-right: 10%;*/
   margin-top: 10%;
   display: flex;
   flex-direction: row;
@@ -189,17 +209,12 @@ li {
   height: auto;
 }
 
-.visible{
-  border: 20px solid red;
-  padding:8%;
-  background-color: orange;
-}
 header{
   animation: move cubic-bezier(.32, 0, .07, 1) 2s;
 }
 @keyframes move {
   0%{
-    transform: translateX(100%);
+    transform: translateX(50%);
   }
   100%{
     transform: translateX(0%)
