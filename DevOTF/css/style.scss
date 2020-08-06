@@ -22,7 +22,7 @@ body {
 }
 
 header {
-  line-height: 0.5;
+  line-height: 0.8;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -78,14 +78,14 @@ footer {
 .bann{
   @include title;
   width: 99%;
-  height: 80px;
+  height: 6em;
   position: sticky;
   top: 0px;
   right: 0px;
   z-index: 1;
   background-color: rgb(113, 163, 221);
   border: 5px solid rgba(166, 251, 251, 0.931);
-  border-radius: 10px;
+  border-radius: 5px;
   opacity: 0;
   transition: opacity 500ms;
   &-v{
@@ -94,7 +94,7 @@ footer {
   }
 }
 .titlebann{
-
+  font-size: 3em;
 }
 
 h1 {
@@ -227,6 +227,14 @@ header{
   h1 {
     font-size: 2em;
   }
+  .titlebann{
+    font-size: 1.5em;
+  }
+  .bann{
+    height: 6em;
+  }
+}
+
 
   /*-----------------------------------( SMARTPHONE paysage )-----------------------------*/
   @media screen and (max-width: 600px)and (orientation: landscape) {
@@ -246,7 +254,7 @@ header{
       align-content: space-around;
     }
   }
-}
+
 .vdo{
   width: 100%;
   height: auto;
@@ -265,7 +273,10 @@ input, label{
 
 /*------------------------------- ( SMARTPHONE ) --------------------------------*/
 @media screen and (max-width: 700px) {
-
+  html{
+    margin: 0px;
+  }
+  
   body {
     background-image: url("../image/lazBMobPic.jpg");
     background-position: center;
@@ -273,6 +284,12 @@ input, label{
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+  }
+  .titlebann{
+    font-size: 1.5em;
+  }
+  .bann{
+    height: 6em;
   }
 
   a {

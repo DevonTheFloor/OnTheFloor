@@ -14,7 +14,7 @@ body {
   width: 100%; }
 
 header {
-  line-height: 0.5;
+  line-height: 0.8;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -43,18 +43,21 @@ footer {
   text-align: center;
   font-family: 'gondola_sd_-_swashregular';
   width: 99%;
-  height: 80px;
+  height: 6em;
   position: sticky;
   top: 0px;
   right: 0px;
   z-index: 1;
   background-color: #71a3dd;
   border: 5px solid rgba(166, 251, 251, 0.931);
-  border-radius: 10px;
+  border-radius: 5px;
   opacity: 0;
   transition: opacity 500ms; }
   .bann-v {
     opacity: 1; }
+
+.titlebann {
+  font-size: 3em; }
 
 h1 {
   font-size: 6em;
@@ -179,8 +182,13 @@ header {
   h1 {
     font-size: 2em; }
 
-  /*-----------------------------------( SMARTPHONE paysage )-----------------------------*/ }
-@media screen and (max-width: 1154px) and (max-width: 600px) and (orientation: landscape) {
+  .titlebann {
+    font-size: 1.5em; }
+
+  .bann {
+    height: 6em; } }
+/*-----------------------------------( SMARTPHONE paysage )-----------------------------*/
+@media screen and (max-width: 600px) and (orientation: landscape) {
   body {
     background-image: url("../image/lazBMobLd.jpg");
     background-position: center;
@@ -211,6 +219,9 @@ input, label {
 
 /*------------------------------- ( SMARTPHONE ) --------------------------------*/
 @media screen and (max-width: 700px) {
+  html {
+    margin: 0px; }
+
   body {
     background-image: url("../image/lazBMobPic.jpg");
     background-position: center;
@@ -218,6 +229,12 @@ input, label {
     background-repeat: no-repeat;
     width: 100%;
     height: 100%; }
+
+  .titlebann {
+    font-size: 1.5em; }
+
+  .bann {
+    height: 6em; }
 
   a {
     font-size: large; }
