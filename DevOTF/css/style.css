@@ -6,10 +6,12 @@
   font-style: normal; }
 body {
   width: 100%;
+  height: auto;
   margin: 0px;
+  padding: 0px;
   background-image: url("../image/lazB.jpg");
   background-position: center;
-  background-size: inherit;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
